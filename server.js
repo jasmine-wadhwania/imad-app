@@ -50,7 +50,7 @@ var htmlTemplate=`<html>
 return htmlTemplate;
 }
 app.get('/', function (req, res) {
-  res.sendFile(creaTemplate(article-one));
+  res.sendFile(createTemplate(article-one));
 });
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
